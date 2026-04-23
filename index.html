@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>测试压抑度量表</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>测试压抑度量表</h1>
+    <p class="intro">请根据你平时的真实情况，在下面每题选择 1（非常不符合） 到 5（非常符合）。本测试仅供娱乐。</p>
+
+    <form id="quizForm">
+      <table class="quiz-table">
+        <thead>
+          <tr>
+            <th>题目</th>
+            <th>非常不符合<br>1</th>
+            <th>不符合<br>2</th>
+            <th>中等<br>3</th>
+            <th>符合<br>4</th>
+            <th>非常符合<br>5</th>
+          </tr>
+        </thead>
+        <tbody id="questionsBody"></tbody>
+      </table>
+
+      <div class="actions">
+        <button type="submit" id="submitBtn">提交并查看结果</button>
+        <button type="button" id="resetBtn">重置</button>
+      </div>
+    </form>
+
+    <div id="result" class="result hidden">
+      <h2>测试结果</h2>
+      <p class="score">总分：<span id="totalScore"></span> / 50</p>
+      <p class="label">等级：<strong id="levelLabel"></strong></p>
+      <p class="desc" id="levelDesc"></p>
+    </div>
+
+    <footer class="footer">由 DeepSeek 和 GitHub Copilot 制作</footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
